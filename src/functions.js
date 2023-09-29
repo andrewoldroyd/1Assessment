@@ -24,7 +24,11 @@ console.log(average(5, 7))
 // Ex.:
 //   approximatelyEqual(10.001, 10);
 //   => true
-function approximatelyEqual(x, y) {}
+function approximatelyEqual(x, y) {
+
+
+
+}
 
 // Given a first name and last name, return a full name in the format "FIRST LAST"
 // Ex.:

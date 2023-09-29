@@ -45,10 +45,10 @@ const result = 1 < 100 || 'hello' === 'hi';
 console.log(result);
 ```
 
-- [ ] **A.** `true`
+- [x] **A.** `true`
 - [ ] **B.** `false`
 - [ ] **C.** `undefined`
-- [x] **D.** N/A because the code has an error
+- [ ] **D.** N/A because the code has an error
 
 ### A.4. What's the output?
 
@@ -64,8 +64,8 @@ if (word) {
 ```
 
 - [ ] **A.** `yay!`
-- [ ] **B.** `no :(`
-- [x] **C.** An empty line
+- [x] **B.** `no :(`
+- [ ] **C.** An empty line
 - [ ] **D.** N/A because the code has an error
 
 ### A.5. Fill in the blank
@@ -88,8 +88,8 @@ cherry
 ```
 
 - [ ] **A.** `const fruit in fruits`
-- [ ] **B.** `const fruit of fruits`
-- [x] **C.** `let fruit = 0; fruit < fruits.length; fruit++`
+- [x] **B.** `const fruit of fruits`
+- [ ] **C.** `let fruit = 0; fruit < fruits.length; fruit++`
 - [ ] **D.** None of the above
 
 ### A.6. What will happen?
@@ -118,8 +118,8 @@ console.log'hi';
 // hi
 ```
 
-- [x] **A.** The code causes an error because there should be parentheses around `'hi'`.
-- [ ] **B.** The code causes an error because `console.log` isn't a function.
+- [ ] **A.** The code causes an error because there should be parentheses around `'hi'`.
+- [x] **B.** The code causes an error because `console.log` isn't a function.
 - [ ] **C.** The code causes an error because the code will run but it won't output anything.
 - [ ] **D.** There is no error; the code generates the expected output.
 
@@ -138,8 +138,8 @@ console.log(fruits[fruits.indexOf('apple')]);
   JavaScript syntax.
 - [ ] **B.** The code causes an error because `fruits.indexOf('apple')` doesn't return a valid
   index number.
-- [x] **C.** The code causes an error because it outputs `0` instead of the expected output.
-- [ ] **D.** There is no error; the code generates the expected output.
+- [ ] **C.** The code causes an error because it outputs `0` instead of the expected output.
+- [x] **D.** There is no error; the code generates the expected output.
 
 ### A.9. Identify the error
 
@@ -157,10 +157,10 @@ for (const w of words) {
 ```
 
 - [ ] **A.** The code causes an error because `w` needs to be a `let` variable.
-- [ ] **B.** The code causes an error because `words` is an array and `toUpperCase()` isn't a
+- [x] **B.** The code causes an error because `words` is an array and `toUpperCase()` isn't a
   valid array function.
 - [ ] **C.** The code causes an error because it will output `['JS', 'HTML', 'CSS']` three times.
-- [x] **D.** There is no error; the code generates the expected output.
+- [ ] **D.** There is no error; the code generates the expected output.
 
 ### A.10. Identify the error
 
@@ -178,9 +178,9 @@ console.log(numStrings);
 ```
 
 - [ ] **A.** The code causes an error because `numStrings` needs to be a `let` variable.
-- [ ] **B.** The code causes an error because `i <= nums.length` should be `i < nums.length`
+- [x] **B.** The code causes an error because `i <= nums.length` should be `i < nums.length`
 - [ ] **C.** The code causes an error because `i++` isn't valid JavaScript syntax.
-- [x] **D.** There is no error; the code generates the expected output.
+- [ ] **D.** There is no error; the code generates the expected output.
 
 ### A.11. Identify the error
 
@@ -225,13 +225,13 @@ Functions can be used to create named blocks of code that can be executed/reused
 **_What is the difference between `console.log` and `return`?_**
 
 ```
-console.log is for the devs and return is for the end user. consolelog only outputs something to your terminal, while return carries out an action outside of the terminal.
+console.log is for the devs, it visually prints something out in your console or terminal, and return is moreso for the end user, it does an action outside of just showing something in the console/terminal. consolelog only outputs something to your terminal, while return carries out an action outside of the terminal.
 ```
 
 **_What's the difference between defining and calling a function?_**
 
 ```
-Calling a function is where you put () with an argument inside, and defining a function is naming it and giving it paramaters and writing the code for what the function will do.
+Calling a function is where you put () with an argument inside(or just empty '()' to invoke the function, ie: '.toUpperCase()'), and defining a function is naming it and giving it paramaters and writing the code for what the function will do.
 ```
 
 ### B.2. Describe these data types.
@@ -241,13 +241,13 @@ Write a short description of the following data types:
 **_String_**
 
 ```
-Anything in quotations, double single or backticks. Can be numbers letters/words or symbols.
+Anything in quotations, double single or backticks. Can be numbers letters/words or symbols. let x = '5' is a string stored in a variable. And so is let y = 'five'
 ```
 
 **_Number_**
 
 ```
-Any integer, whole number value.
+Any integer, something in our code defined as a whole number value. ie: let x = 5 being a number stored to a variable.
 ```
 
 **_Boolean_**
@@ -259,7 +259,7 @@ True or False
 **_Array_**
 
 ```
-A list of things in []. Can be any other data types or other arrays, etc.
+A list of things in brackets, sepereated by commas. Can be any other data types or another array.
 ```
 
 ### B.3. Trace the value of `x`
