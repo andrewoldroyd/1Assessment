@@ -55,11 +55,16 @@ console.log(generateSentence("Andrew", "egg nog", "the north pole"))
 // Ex.:
 //   censorVowels('javascript');
 //   => 'j*v*scr*pt'
+const vowels = ["a", "e", "i", "o", "u"]
+
 function censorVowels(string) {
-
-  return string.replace(["a", "e", "i", "o", "u"], "*")
-
-}
+  for (let i=0; i < string.length; i++){
+    
+      if ((string[i]).includes(vowels)){
+        string.split().replaceAll(string[i], "*")
+      }
+    }
+  }
 
 console.log(censorVowels("javascript"))
 
@@ -69,7 +74,7 @@ console.log(censorVowels("javascript"))
 //   => 'hElLo wOrLd'
 function stickyCase(string) {
 
-  return string.insertFunctionForStickyCase()
+  return string.//insertFunctionForStickyCase()
 }
 
 console.log(stickyCase("hello world"))

@@ -2,57 +2,107 @@
 // Ex.:
 //   greaterThanTen([1, 2, 3, 11, 12, 13]);
 //   => [11, 12, 13]
+
+// *** below is what I first had
+
+// function greaterThanTen(numbers) {
+//   for (let i=0; i < numbers.length; i++){
+//     if (numbers[i] > 10)
+//     return numbers[i]
+//   }
+// }
+
+// *** above is what I first had
+
+//this is after figuring it out more:
+
+const arr1 = [1, 10, 2, 17, 4, 11, 14, 50]
+
+
 function greaterThanTen(numbers) {
+  const result = []
   for (let i=0; i < numbers.length; i++){
-    if (numbers[i] > 10)
-    return numbers[i]
+    if (numbers[i] > 10){
+      result.push(numbers[i])
+    }
   }
+  return result
 }
+
+console.log(greaterThanTen(arr1))
 
 // Given an array of strings, return all words that start with 'b' or 'B'.
 // Ex.:
 //   bWords(['banana', 'orange', 'apple', 'Bonobo', 'kiwi', 'pear']);
 //   => ['banana', 'Bonobo]
-function bWords(words) {
-  for (let i = 0; i < words.length; i++){
-    
-  }
-  return words.startsWith("b", "B")
 
+const arr1 = ["Apple", "Beans", "milk", "chocolate", "bacon", "banana"]
+
+function bWords(words) {
+    const result = []
+  for (let i = 0; i < words.length; i++){
+    if (words[i].startsWith("b") || words[i].startsWith("B")){
+      result.push(words[i])
+    }
+  }
+  return result
 }
+
+console.log(bWords(arr1))
 
 // Add all the elements from additionalItems to the end of originalArray.
 // Return the originalArray..
 // Ex.:
 //  extend([1, 2, 3], [4, 5, 6]);
 //  => [1, 2, 3, 4, 5, 6]
+
+const originalArray = [1, 2, 3]
+const additionalItems = [4, 5, 6]
+
 function extend(originalArray, additionalItems) {
-  originalArray.push(additionalItems)
-  return extend
+  originalArray.push(...additionalItems)
+  return originalArray
 }
 
-console.log(extend())
+console.log(extend(originalArray, additionalItems))
 
 // Return an array of all items with the given length.
 // Ex.:
 //   itemsWithLength(['a', 'bbb', 'cccc', 'dddddd', 'eee'], 3);
 //   => ['bbb', 'eee']
+
+const randomArr = ["abcd", "1a2b", "abc", "no", "yes", "123"]
+
 function itemsWithLength(items, length) {
-
-  return itemsWithLength()
-
+const newArr = []
+for (let i =0; i < items.length; i++){
+  if (items[i].length === length){
+    newArr.push(items[i])
+  }
+}
+  return newArr
 }
 
-console.log(itemsWithLength())
+console.log(itemsWithLength(randomArr, 3))
 
 // Return an array with every other element from the input array (start with index 0).
 // Ex.:
 //   everyOtherItem(['a', 'b', 'c', 'd', 'e']);
 //   => ['a', 'c', 'e']
-function everyOtherItem(items) {
 
-  return everyOtherItem.splice()
+const arr1 = ['a', 'b', 'c', 'd', 'e', 'f']
+
+function everyOtherItem(items) {
+  const result = []
+  for (let i = 0; i < items.length; i++){
+    if((items[i])[0] % 2 === 0){ // I know, this line is wrong since the array is or can be a string rather than just numbers
+      result.push(items[i])
+    }
+  }
+  return result
 }
+
+console.log(everyOtherItem(arr1))
 
 // Given a list of words and a letter, return the indexes of the words that
 // start with that letter. You can assume that the words and letter will always
